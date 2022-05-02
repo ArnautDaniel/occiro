@@ -1,1 +1,8 @@
 # occiro
+
+DJINTA:  
+
+FIGROC:
+
+POWPRI:
+
