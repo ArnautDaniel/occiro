@@ -1,8 +1,11 @@
 # occiro
 
-DJINTA:  
+A photogrammetry system.
 
-FIGROC:
+DJINTA: The arduino controller to step the motor. 
 
-POWPRI:
+FIGROC: Server processing
 
+POWPRI: Raspberry Pi controller
+
+DEPENDS: MicMac
