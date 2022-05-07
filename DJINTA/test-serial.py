@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-import time
-import serial
-import random
-ser = serial.Serial('/dev/ttyACM0', 9600)
-ser.reset_input_buffer()
-ser.write(b'20000')
+import time, serial, sys
+
+if len(sys.argv) != 2:
+    print("Invalid number of arguments")
+    sys.exit()
+
+ard = serial.Serial("/dev/ttyACM0", 9600)
+ard.reset_input_buffer()
+ard.write(bytes(sys.argv[1]))
 time.sleep(5)
-ser.write(b'40000')
