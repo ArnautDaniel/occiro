@@ -7,7 +7,7 @@ create cams 3 cells allot
 
 : iard-connect ( -- ) 0 ;
 : ard-step ( inc -- ) drop ;
-: icamera-connect ( -- ) 0 ;
+: icamera-connect ( -- ) s" gphoto2" system 0 ;
 : shoot ( a -- n )
     drop rnd ;
     
